@@ -1,0 +1,317 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-family: 'Cormorant Infant', sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 74.0625rem;
+  width: 100%;
+  margin: auto;
+}
+
+.container--wide {
+  max-width: 112.5rem;
+  width: 100%;
+  margin: auto;
+}
+
+.container--small {
+  max-width: 54.6875rem;
+  width: 100%;
+  margin: auto;
+}
+
+.header {
+  padding: 2.1875rem 0;
+}
+
+.header-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.header-content__tel {
+  text-decoration: none;
+  color: #195557;
+}
+
+.header-content__img {
+  margin-left: 5rem;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+.header-content__call {
+  width: 4.3125rem;
+  height: 4.3125rem;
+}
+
+.header-nav {
+  margin-right: 8.25rem;
+}
+
+.header-nav__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #195557;
+  margin-right: 5.375rem;
+}
+
+.header-nav__link:last-of-type {
+  margin: 0;
+}
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+.hero {
+  padding-top: 18.125rem;
+  padding-bottom: 31.25rem;
+  margin-top: -10.3125rem;
+  background: url("../img/hedge2.png") no-repeat left bottom, url("../img/hedge1.png") no-repeat right bottom, url("../img/fon.png") no-repeat top;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-content__img {
+  width: 27.6875rem;
+  height: 5.875rem;
+  margin: auto;
+  margin-bottom: 1.25rem;
+}
+
+.hero-content__subtitle {
+  font-size: 3.125rem;
+  color: #70908B;
+  margin-bottom: 1.125rem;
+}
+
+.hero-content__text {
+  font-size: 0.875rem;
+  color: #70908B;
+  margin-bottom: 2.125rem;
+}
+
+.button-hero {
+  padding: 1.625rem 7.25rem;
+  width: 20.5rem;
+  height: 4.3125rem;
+  margin: auto;
+  color: #ffffff;
+  border: none;
+  border-radius: 2.5rem;
+  background: #70908B;
+}
+
+.info {
+  margin-top: -23rem;
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.info-card__img {
+  background: #FFEDCD;
+  border-radius: 50%;
+  padding: 3.875rem 2.8125rem 3.5rem  2.8125rem;
+  margin-bottom: 1.875rem;
+}
+
+.info-card__img--two {
+  background: #E2F0DF;
+  border-radius: 50%;
+  padding: 3.75rem 3.625rem 3.625rem 3.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.info-card__img--three {
+  background: #70908B;
+  border-radius: 50%;
+  padding: 4.1875rem 3.75rem 3.625rem 3.75rem;
+  margin-bottom: 1.875rem;
+}
+
+.info-card__title {
+  margin-bottom: 0.5rem;
+  color: #195557;
+}
+
+.info-card__text {
+  max-width: 11.9375rem;
+  color: #195557;
+  text-align: center;
+}
+
+.product {
+  padding-top: 8rem;
+  padding-bottom: 15rem;
+}
+
+.product-content {
+  display: flex;
+  position: relative;
+}
+
+.product-content::before {
+  content: '';
+  position: absolute;
+  top: 245px;
+  left: -50px;
+  width: 24px;
+  height: 24px;
+  background: url("../img/left.svg") no-repeat;
+}
+
+.product-content::after {
+  content: '';
+  position: absolute;
+  top: 245px;
+  left: 1205px;
+  width: 24px;
+  height: 24px;
+  background: url("../img/right.svg") no-repeat;
+}
+
+.product-card {
+  display: flex;
+  background: url("../img/info.svg") no-repeat top 20px right 20px, #FFEDCD;
+  border-radius: 25px;
+  margin-right: 2.4375rem;
+  padding: 3.375rem 0.25rem 2.0625rem 3.6875rem;
+}
+
+.product-card__title {
+  max-width: 7.75rem;
+  font-size: 2.5rem;
+  color: #195557;
+  margin-bottom: 1.0625rem;
+}
+
+.product-card__text {
+  max-width: 11.8rem;
+  font-size: 0.875rem;
+  color: #000;
+  font-family: 'Raleway';
+  line-height: 22px;
+  margin-bottom: 1.0625rem;
+}
+
+.product-card-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-price__sale {
+  color: #bdbcbc;
+  text-decoration-line: line-through;
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+}
+
+.product-card-price__tag {
+  color: #195557;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.product-card__img {
+  padding-top: 6.1875rem;
+  padding-bottom: 2.0625rem;
+}
+
+.product-carder {
+  display: flex;
+  background: url("../img/info.svg") no-repeat top 20px right 20px, #E2F0DF;
+  border-radius: 25px;
+  padding: 3.375rem 0.25rem 0.625rem 3.6875rem;
+}
+
+.product-carder__title {
+  max-width: 7.75rem;
+  font-size: 2.5rem;
+  color: #195557;
+  margin-bottom: 1.0625rem;
+}
+
+.product-carder__text {
+  max-width: 11.8rem;
+  font-size: 0.875rem;
+  color: #000;
+  font-family: 'Raleway';
+  line-height: 22px;
+  margin-bottom: 1.0625rem;
+}
+
+.product-carder-price {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-carder-price__sale {
+  color: #bdbcbc;
+  text-decoration-line: line-through;
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+}
+
+.product-carder-price__tag {
+  color: #195557;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.product-carder__img {
+  padding-top: 6.875rem;
+}
+
+.sale {
+  background: #70908B;
+  position: absolute;
+  top: -10px;
+  left: 60px;
+}
+
+.sale-item {
+  font-size: 20px;
+  color: #ffffff;
+  padding: 8px 8px 9px 9px;
+  font-weight: bold;
+}
+
+.sale--two {
+  background: #70908B;
+  position: absolute;
+  top: -10px;
+  left: 660px;
+}
+/*# sourceMappingURL=style.css.map */
